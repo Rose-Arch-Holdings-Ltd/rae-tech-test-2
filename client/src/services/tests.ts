@@ -3,7 +3,7 @@ import { ITestsResponse } from '../../../typings/response';
 
 const TestService = {
   getAllTests(): Promise<ITestsResponse> {
-    return ApiService.call('http://localhost:3000/api/tests');
+    return ApiService.call('/api/tests');
   },
 };
 
