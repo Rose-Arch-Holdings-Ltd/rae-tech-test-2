@@ -3,13 +3,13 @@ import { IStudentDetailsResponse, IStudentsWithProfileImagesResponse } from '../
 
 const StudentService = {
   getAllStudentsWithProfileImages(): Promise<IStudentsWithProfileImagesResponse> {
-    return ApiService.call('http://localhost:3000/api/students');
+    return ApiService.call('/api/student/all');
   },
 
   // 1c. Get data from the endpoint "/api/student/{studentId}"
   getStudentDataById(studentId: string): Promise<IStudentDetailsResponse> {
-    return ApiService.call('http://localhost:3000/');
-    // 2. Return the data from the backend: /server/lib/studentService.ts
+    return ApiService.call('');
+    // 2. Return the data from the backend: server/src/student/student.service.ts
   }
 };
 

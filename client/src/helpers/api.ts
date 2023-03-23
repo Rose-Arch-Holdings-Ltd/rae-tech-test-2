@@ -23,8 +23,9 @@ export default class ApiService {
   });
 
   public static async call<T extends IResponseBody>(path: string, config: IRequestConfig = {}): Promise<T> {
+    const fullPath = 'http://localhost:3000' + path;
     try {
-      const response = await this.request<T>(path, config);
+      const response = await this.request<T>(fullPath, config);
       await this.sleep(1000);
       return response.data;
     } catch (error) {

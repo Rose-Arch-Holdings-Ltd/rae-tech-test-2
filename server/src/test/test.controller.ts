@@ -7,6 +7,7 @@ export class TestController {
 
   @Get('')
   getAllTests() {
-    return this.testService.getAllTests();
+    const tests = this.testService.getAllTests();
+    return { data: tests };
   }
 }
