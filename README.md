@@ -12,9 +12,10 @@ This repo contains a small technical challenge for RAE candidates. This project 
 ---
 
 1. Clone the repository: `git clone https://github.com/Rose-Arch-Holdings-Ltd/rae-tech-test-2.git`
-2. Run `cd server` in the terminal, then `yarn install` and `yarn start` to start the server.
-3. In another terminal run `cd client`, then `yarn install` and `yarn start` to start the web client.
-4. Access the project at http://localhost:1234/
+2. Ensure you are using `node@18.15.0` or above
+3. Run `cd server` in the terminal, then `yarn install` and `yarn start` to start the server.
+4. In another terminal run `cd client`, then `yarn install` and `yarn start` to start the web client.
+5. Access the project at http://localhost:1234/
 
 ### Tasks
 
